@@ -1,0 +1,86 @@
+{
+    "pacote": {
+        "produto": [
+            {
+                "id": 255156,
+                "nome": null,
+                "sku": "162000",
+                "peso": 500,
+                "altura": 3,
+                "largura": 8,
+                "comprimento": 15,
+                "valor": 10
+            },
+            {
+                "id": 255157,
+                "nome": null,
+                "sku": "162000",
+                "peso": 500,
+                "altura": 3,
+                "largura": 8,
+                "comprimento": 15,
+                "valor": 10
+            },
+            {
+                "id": 255159,
+                "nome": null,
+                "sku": "162000",
+                "peso": 500,
+                "altura": 3,
+                "largura": 8,
+                "comprimento": 15,
+                "valor": 10
+            },
+            {
+                "id": 255160,
+                "nome": null,
+                "sku": "162000",
+                "peso": 500,
+                "altura": 3,
+                "largura": 8,
+                "comprimento": 15,
+                "valor": 10
+            }
+        ],
+        "carrinho": {
+            "usuario": {
+                "nome": "André Mansur",
+                "email": "andre.mansur@traycorp.com.br",
+                "telefone": null
+            },
+            "cartao": {
+                "cardFlag": "mastercard",
+                "cardIsValid": true,
+                "cardName": "fulandodeta",
+                "cardNumber": "2503210658454612",
+                "cardExpYear": "2019",
+                "cardExpMonth": "04",
+                "cardSegCod": "213"
+            },
+            "id": "87d2656c-1d49-42b3-9bc8-7b8aa2909275",
+            "valor": 20
+        },
+        "origem": {
+            "logradouro": null,
+            "numero": null,
+            "complemento": null,
+            "bairro": null,
+            "cidade": null,
+            "estado": null,
+            "cep": "80220190",
+            "referencia": null
+        },
+        "destino": {
+            "logradouro": "Rua Desembargador Motta",
+            "numero": "10",
+            "complemento": "",
+            "bairro": "Bigorrilho",
+            "cidade": "Curitiba",
+            "estado": "PR",
+            "cep": "80430152",
+            "referencia": null
+        },
+        "valor": 20
+    },
+    "metadata": []
+}

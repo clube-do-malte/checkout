@@ -1,0 +1,9 @@
+ {
+    cardFlag: "mastercard",
+    cardIsValid: true,
+    cardName: "fulandodeta",
+    cardNumber: "2503210658454612",
+    cardExpYear: '2019',
+    cardExpMonth: '04',
+    cardSegCod: "213"
+}
