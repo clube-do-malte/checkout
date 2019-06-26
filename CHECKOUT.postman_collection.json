@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "39e5c433-287b-4c16-a8b5-56ecbcd3400a",
+		"name": "CHECKOUT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Frete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pacote\": {\r\n        \"produto\": [\r\n            {\r\n                \"id\": 255156,\r\n                \"nome\": \"teste\",\r\n                \"sku\": \"162000\",\r\n                \"peso\": 500,\r\n                \"altura\": 3,\r\n                \"largura\": 8,\r\n                \"comprimento\": 15,\r\n                \"valor\": 10\r\n            },\r\n            {\r\n                \"id\": 255157,\r\n                \"nome\": \"teste\",\r\n                \"sku\": \"162000\",\r\n                \"peso\": 500,\r\n                \"altura\": 3,\r\n                \"largura\": 8,\r\n                \"comprimento\": 15,\r\n                \"valor\": 10\r\n            },\r\n            {\r\n                \"id\": 255159,\r\n                \"nome\": \"teste\",\r\n                \"sku\": \"162000\",\r\n                \"peso\": 500,\r\n                \"altura\": 3,\r\n                \"largura\": 8,\r\n                \"comprimento\": 15,\r\n                \"valor\": 10\r\n            },\r\n            {\r\n                \"id\": 255160,\r\n                \"nome\": \"teste\",\r\n                \"sku\": \"162000\",\r\n                \"peso\": 500,\r\n                \"altura\": 3,\r\n                \"largura\": 8,\r\n                \"comprimento\": 15,\r\n                \"valor\": 10\r\n            }\r\n        ],\r\n        \"carrinho\": {\r\n            \"usuario\": {\r\n                \"nome\": \"André Mansur\",\r\n                \"email\": \"andre.mansur@traycorp.com.br\",\r\n                \"telefone\": \"teste\"\r\n            },\r\n            \"id\": \"87d2656c-1d49-42b3-9bc8-7b8aa2909275\",\r\n            \"valor\": 20\r\n        },\r\n        \"origem\": {\r\n            \"logradouro\": null,\r\n            \"numero\": null,\r\n            \"complemento\": null,\r\n            \"bairro\": null,\r\n            \"cidade\": null,\r\n            \"estado\": null,\r\n            \"cep\": \"80220190\",\r\n            \"referencia\": null\r\n        },\r\n        \"destino\": {\r\n            \"logradouro\": \"Rua Desembargador Motta\",\r\n            \"numero\": \"10\",\r\n            \"complemento\": \"\",\r\n            \"bairro\": \"Bigorrilho\",\r\n            \"cidade\": \"Curitiba\",\r\n            \"estado\": \"PR\",\r\n            \"cep\": \"80430152\",\r\n            \"referencia\": null\r\n        },\r\n        \"valor\": 20\r\n    },\r\n    \"metadata\": []\r\n}"
+				},
+				"url": {
+					"raw": "http://172.16.0.240:8080/checkout/public/frete",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"0",
+						"240"
+					],
+					"port": "8080",
+					"path": [
+						"checkout",
+						"public",
+						"frete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Carrinho Cartão",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pacote\": {\r\n        \"produto\": [\r\n            {\r\n                \"id\": 255156,\r\n                \"nome\": null,\r\n                \"sku\": \"162000\",\r\n                \"peso\": 500,\r\n                \"altura\": 3,\r\n                \"largura\": 8,\r\n                \"comprimento\": 15,\r\n                \"valor\": 10\r\n            },\r\n            {\r\n                \"id\": 255157,\r\n                \"nome\": null,\r\n                \"sku\": \"162000\",\r\n                \"peso\": 500,\r\n                \"altura\": 3,\r\n                \"largura\": 8,\r\n                \"comprimento\": 15,\r\n                \"valor\": 10\r\n            },\r\n            {\r\n                \"id\": 255159,\r\n                \"nome\": null,\r\n                \"sku\": \"162000\",\r\n                \"peso\": 500,\r\n                \"altura\": 3,\r\n                \"largura\": 8,\r\n                \"comprimento\": 15,\r\n                \"valor\": 10\r\n            },\r\n            {\r\n                \"id\": 255160,\r\n                \"nome\": null,\r\n                \"sku\": \"162000\",\r\n                \"peso\": 500,\r\n                \"altura\": 3,\r\n                \"largura\": 8,\r\n                \"comprimento\": 15,\r\n                \"valor\": 10\r\n            }\r\n        ],\r\n        \"carrinho\": {\r\n            \"usuario\": {\r\n                \"nome\": \"André Mansur\",\r\n                \"email\": \"andre.mansur@traycorp.com.br\",\r\n                \"telefone\": null\r\n            },\r\n            \"cartao\": {\r\n                \"cardFlag\": \"mastercard\",\r\n                \"cardIsValid\": true,\r\n                \"cardName\": \"fulandodeta\",\r\n                \"cardNumber\": \"2503210658454612\",\r\n                \"cardExpYear\": \"2019\",\r\n                \"cardExpMonth\": \"04\",\r\n                \"cardSegCod\": \"213\"\r\n            },\r\n            \"id\": \"87d2656c-1d49-42b3-9bc8-7b8aa2909275\",\r\n            \"valor\": 20\r\n        },\r\n        \"origem\": {\r\n            \"logradouro\": null,\r\n            \"numero\": null,\r\n            \"complemento\": null,\r\n            \"bairro\": null,\r\n            \"cidade\": null,\r\n            \"estado\": null,\r\n            \"cep\": \"80220190\",\r\n            \"referencia\": null\r\n        },\r\n        \"destino\": {\r\n            \"logradouro\": \"Rua Desembargador Motta\",\r\n            \"numero\": \"10\",\r\n            \"complemento\": \"\",\r\n            \"bairro\": \"Bigorrilho\",\r\n            \"cidade\": \"Curitiba\",\r\n            \"estado\": \"PR\",\r\n            \"cep\": \"80430152\",\r\n            \"referencia\": null\r\n        },\r\n        \"valor\": 20\r\n    },\r\n    \"metadata\": []\r\n}"
+				},
+				"url": {
+					"raw": "http://172.16.0.240:8080/checkout/public/Ax90JSw",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"0",
+						"240"
+					],
+					"port": "8080",
+					"path": [
+						"checkout",
+						"public",
+						"Ax90JSw"
+					]
+				},
+				"description": "Espera Receber o Json do Fechamento do Carrinho"
+			},
+			"response": []
+		}
+	]
+}
